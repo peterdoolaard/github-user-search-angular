@@ -2,14 +2,20 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { SearchFormComponent } from './search-form/search-form.component';
+import { ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SearchFormComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+	imports: [
+		BrowserModule,
+		ReactiveFormsModule
+	],
   providers: [],
   bootstrap: [AppComponent]
 })

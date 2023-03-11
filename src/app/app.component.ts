@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Octokit, App } from 'octokit';
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,45 @@
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 36px;
+}
+
+.toggle-button-theme {
+  align-items: center;
+  background: transparent;
+  block-size: 20px;
+  border: none;
+  color: var(--text-color-light);
+  column-gap: 1rem;
+  display: flex;
+  font-family: "Space Mono", monospace;
+  padding: 0;
+
+  & .toggle-button__label {
+    font-size: 16px;
+    font-weight: 700;
+    font-variant: all-small-caps;
+    letter-spacing: 3px;
+  }
+
+  & .toggle-button__icon {
+    aspect-ratio: 1;
+    block-size: 1.25rem;
+
+    & path {
+      fill: var(--toggle-button-color);
+    }
+  }
+
+  &:hover {
+
+    & .toggle-button__label {
+      color: var(--toggle-button-hover);
+    }
+
+    & .toggle-button__icon path {
+      fill: var(--toggle-button-hover);
+    }
+  }
+}

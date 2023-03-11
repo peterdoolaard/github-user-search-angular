@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+@import '/src/assets/css/normalize';
+@import '/src/assets/css/variables';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+body {
+  background: var(--background-body);
+  color: var(--text-color-dark);
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0;
+  transition: background 250ms ease-in-out, color 200ms ease;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+h1 {
+  color: var(--text-color-dark);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+h2 {
+  color: var(--text-color-dark);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  color: var(--text-color-accent);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h4 {
+  color: var(--text-color-light);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.page {
+  margin-inline: auto;
+  max-inline-size: 375px;
+  min-block-size: 100dvh;
+  padding: 31px 24px 80px 24px;
+}
