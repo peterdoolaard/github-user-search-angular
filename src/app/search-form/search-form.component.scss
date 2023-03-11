@@ -37,6 +37,10 @@ svg {
   color: var(--text-color-light);
   display: inline-block;
   font-size: 13px;
+
+  & span {
+    opacity: 0;
+  }
 }
 
 .search-button {
@@ -55,8 +59,4 @@ svg {
     background: var(--button-bg-active);
     outline: none;
   }
-}
-
-.__show {
-  opacity: 1;
 }
